@@ -22,7 +22,7 @@ numeros = [
 ]
 for v in portas:
   for k in numeros:
-    time.sleep(1)
+    time.sleep(10)
     url = f"http://20.81.42.82:{v}/send-message"
     
     payload = {
