@@ -3,12 +3,12 @@ import time
 from numpy import random
 
 portas = [
-  '8000',
-  '8002',
-  '8003',
-  '8004',
-  '8005',
-  '8006'
+  '7000',
+  '7002',
+  '7003',
+  '7004',
+  '7005',
+  '7006'
 ]
 
 numeros = [
@@ -22,8 +22,8 @@ numeros = [
 ]
 for v in portas:
   for k in numeros:
-    time.sleep(10)
-    url = f"http://20.81.42.82:{v}/send-message"
+    
+    url = f"http://localhost:{v}/send-message"
     
     payload = {
           'number': f'{k}',
